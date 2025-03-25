@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Kachi-TodoList App</title>
+</head>
+<body>
+    <div>
+      <main>
+        <div class="header">
+          <h1>TODO</h1>
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox">
+            <div class="changeIcon"></div>
+          </label>
+        </div>
+        <div class="createListC">
+          <label>
+            <span class="checkmarkNewList"></span>
+            <input type="text" name="newList" id="newListId" placeholder="Create a new todo...">
+          </label>
+        </div>
+        <div class="main">
+          <ul class="listAllC">
+            <li class="listC" draggable="true">
+              <input type="checkbox" checked="checked" class="checkbox">
+              <span class="checkmark"></span>
+              <div class="listName">Implementing Login Action on the HR AdminDashboard</div>
+              <div class="cross"></div>
+            </li>
+            <li class="listC" draggable="true">
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span>
+              <div class="listName">3 hours live coding session</div>
+              <div class="cross"></div>
+            </li>
+            <li class="listC" draggable="true">
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span>
+              <div class="listName">30 minutes Innovation Stand-Up Meeting</div>
+              <div class="cross"></div>
+            </li>
+            <li class="listC" draggable="true">
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span>
+              <div class="listName">1 Hour Knowledge Sharing Session </div>
+              <div class="cross"></div>
+            </li>
+            <li class="listC" draggable="true">
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span>
+              <div class="listName">2 Hours Bible Studies and Prayers of Mercy</div>
+              <div class="cross"></div>
+            </li>
+            <li class="listC" draggable="true">
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span>
+              <div class="listName">Complete Todo App on Frontend Mentor</div>
+              <div class="cross"></div>
+            </li>
+          </ul>
+          <div class="bottomFunction">
+            <div class="itemsLeft"></div>
+            <div class="showOnly">
+              <a class="btn showAll active">All</a>
+              <a class="btn showOnlyActive">Active</a>
+              <a class="btn showOnlyCompleted">Completed</a>
+            </div>
+            <div class="clearCompleted">Clear Completed</div>
+          </div>
+          <div class="showOnlyMobile">
+            <a class="btn showAll active">All</a>
+            <a class="btn showOnlyActive">Active</a>
+            <a class="btn showOnlyCompleted">Completed</a>
+          </div>
+          <div class="footer">
+            <p>Drag and drop to reorder list</p> <br>
+            <p>Made by <a href="https://github.com/onyekachinngwobia">Onyekachi Ngwobia</a></p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>    
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
